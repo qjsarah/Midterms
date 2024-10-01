@@ -39,4 +39,7 @@ export default {
 </script>
 
 <style>
+  #about-us{
+    width: 70%;
+  }
 </style>

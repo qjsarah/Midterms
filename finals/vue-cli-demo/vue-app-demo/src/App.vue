@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="d-flex justify-content-between container">
-    <div>
-      <img src="" alt="profile picture">
+    <div class="profile">
+      <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/461833476_566061369201511_571597147666377142_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jXMB9w1TIpIQ7kNvgEQtOx2&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=AyZzK9QyH5kTjdeO7bxZwC_&oh=00_AYAfNLWkSLEbpthl95m5MTj33sBC994X6U1CVCwkT-WuLA&oe=6701A3AE" alt="profile picture">
       <br><br><h2>{{ uname }}</h2>
       <h4 class="text-secondary">{{ msg }}</h4> <br>
       <h2> {{ contactText }} </h2>
@@ -52,14 +52,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 5% auto 0;
 }
-
+.profile {
+  width: 50%;
+}
 a {
   color: #42b983;
 }
 
 .text-left {
   text-align: left;
+}
+img {
+  width: 175px;
+  border-radius: 50%
 }
 </style>
