@@ -1,0 +1,36 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #1a1a15 !important;
+  color: #ededed;
+  font-size: 1em;
+  margin: 5% auto;
+}
+.body {
+  background: url(images/noise.png);
+}
+h1  {
+  text-align: center;
+}
+form {
+  margin: 2% 30%;
+  border: 1px solid #ededed;
+  border-radius: 15px;
+  padding: 3% 5%;
+}
+input, textarea {
+  background-color: #333;
+  color: #ededed;
+}
+.input  {
+  margin-top: 2%;
+}
+.submit {
+  width: 100%;
+  display: block;
+  margin: 2% auto;
+  color: #ededed;
+  background-color: #333333;
+  font-size: .8em;
+}

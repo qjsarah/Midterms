@@ -1,0 +1,235 @@
+body {
+     background-color: #1a1a15 !important;
+     font-family: 'Playfair Display', sans-serif !important;
+     margin: 0;
+     padding: 0;
+     max-width: 100%;
+     color: #d9d9d9 !important;
+}
+.body {
+    background: url(images/noise.png);
+}
+a {
+    text-decoration: none !important;
+    color: #d9d9d9 !important;
+}
+.header{
+    text-align: center;
+    font-style: italic;
+    color: #d9d9d9;
+}
+.header img{
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.noise {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.fade {
+    animation: fade 2s linear infinite;
+}
+@-webkit-keyframes fade{
+    0%, 100% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.rotate-center {
+    z-index: 9;
+    -webkit-animation: rotate-center 10s linear infinite;
+    animation: rotate-center 10s linear infinite;
+}
+@-webkit-keyframes rotate-center{
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.rotate-reverse {
+    -webkit-animation: rotate-reverse 10s linear infinite;
+    animation: rotate-reverse 10s linear infinite;
+}
+@-webkit-keyframes rotate-reverse{
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+.stars img {
+    position: absolute;
+}
+.star4 {
+    width: 20px;
+    left: 400px;
+    top: 120.17px;
+}
+.star5 {
+    width: 25px;
+    left: 250px;
+    top: 145px;
+}
+.star6 {
+    width: 30px;
+    right: 250px;
+    top: 145px;
+}
+.star7{
+    width: 25px;
+    right: 450px;
+    top: 90px;
+}
+.header h1 {
+    padding-top: 3%;
+    font-size: 5em;
+}
+.social i {
+    color: #d9d9d9;
+    font-size: 2em;
+    margin: 5px 10px;
+}
+.social i:hover{
+    text-decoration: none;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px antiquewhite;
+    cursor: pointer;
+}
+.container {
+    padding: 3%;
+}
+#myCarousel {
+    box-shadow: 0px 0px 10px #00000070;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+.overlay h2, .over-text{
+    font-size: 8em;
+    color: white;
+    text-align: center;
+    margin-top: 25%;
+    font-style: italic;
+}
+.over-text h3{
+    font-size: 8rem;
+    margin: 25% 10% 0;
+    font: lighter;
+}
+
+.button{
+    color: antiquewhite;
+    width: 30%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: #1a1a15;
+    text-decoration: none;
+}
+.overlay a:hover {
+    text-decoration: none;
+}
+.button:hover {
+    color: #1a1a15;
+    background-color: antiquewhite;
+    transition: .3s ease;
+    box-shadow: 0px 0px 10px #00000070;
+    cursor: pointer;
+}
+.carousel-inner .item:hover .overlay{
+    opacity: 1;
+}
+.features {
+    display: flex;
+    color: #d9d9d9;
+    justify-content: space-around;
+    width: 60%;
+    margin: 2% auto 5%;
+    font-size: 2rem;
+    font-style: italic;
+}
+.star {
+    margin-left: -2%;
+    width: 25px;
+}
+
+/* FEATURED PAGE */
+.content {
+    padding: 2%;
+}
+.content h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 5%;
+}
+
+/* video */
+.with-vid {
+    margin: 5% 20% 10%;
+}
+.vid-first, .vid-next {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.vid-first .text {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.vid-next .text {
+    margin-top: 5%;
+}
+.text {
+    font-size: 5em;
+    font-style: italic;
+}
+.text .star {
+    width: 50px;
+}
+
+
+/* images */
+.head-img img{
+    width: 20%;
+    display: block;
+    margin: 3% 2%;
+}
+.collection-img, .head-img {
+    display: flex;
+    justify-content: center;
+}
+.collection-img img{
+    width: 20%;
+    margin: 5% 2%;
+    display: block;
+}
+/* Footer */
+#footer {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+    text-align: center;
+    color: antiquewhite;
+}
+
